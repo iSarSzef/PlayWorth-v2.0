@@ -51,7 +51,7 @@ depositBtn.addEventListener("click", function(event) {
 
     // Get current saldo
     let currentSaldo = Number(balanceElem.textContent.replace(/,/g, ''));
-    let newSaldo = currentSaldo + howMuch;
+    let newSaldo = currentSaldo + (howMuch * 414);
 
     // Update saldo in backend
     fetch('php/update_saldo.php', {
